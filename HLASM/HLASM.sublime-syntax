@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+name: HLASM
+file_extensions: [hlasm, ASMPGM]
+scope: source.hlasm
+
+contexts:
+  main:
+    - match: \d{8}$
+      scope: constant.numeric
+    - match: ^(\*.{,71})|(\.\*.{,70})
+      scope: comment
+    - match: ^(\S+)
+      captures:
+        1: entity.name.function

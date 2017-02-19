@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+name: JCL
+file_extensions: [JCL]
+scope: source.jcl
+
+contexts:
+  main:
+    - match: ^\/\/\*.*
+      scope: comment
+    - match: ^\/\/(\w+)
+      captures:
+        1: entity.name.function
