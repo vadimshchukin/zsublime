@@ -1,0 +1,6 @@
+[
+    {"caption": "zFTP: Download data set",          "command": "zftp_download_dataset"},
+    {"caption": "zFTP: Upload data set",            "command": "zftp_upload_dataset"},
+    {"caption": "zFTP: Submit job",                 "command": "zftp_submit_job"},
+    {"caption": "zFTP: Submit job and print spool", "command": "zftp_submit_job_and_print_spool"}
+]
