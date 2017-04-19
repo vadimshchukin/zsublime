@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+name: JCL
+file_extensions: [jcl]
+scope: source.jcl
+
+contexts:
+  main:
+    - match: \d{8}$
+      scope: constant.numeric
+    - match: ^\/\/\*.{,69}
+      scope: comment.line
+    - match: "'"
+      push: string
+    - match: ^\/\/(\w*)\W+([a-zA-Z]+)\s
+      captures:
+        1: entity.name.function
+        2: keyword.control
+
+  string:
+    - meta_scope: string.quoted.single.c
+    - match: "''"
+      scope: constant.character.escape.c
+    - match: "'"
+      pop: true
