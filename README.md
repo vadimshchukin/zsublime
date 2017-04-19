@@ -1,2 +1,2 @@
 # zsublime
-Sublime Text plugins for z/OS
+Sublime Text packages for z/OS
