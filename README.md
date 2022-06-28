@@ -8,7 +8,7 @@ Only Sublime Text 3 is supported.
 ## How to install
 - [Download and install Sublime Text 3](https://www.sublimetext.com/3).
 - [Download the plugins archive](https://github.com/vadimshchukin/zsublime/archive/master.zip).
-- Extract the plugins archive to the "%APPDATA%\Sublime Text 3\Packages" folder (can also be opened via "Preferences → Browse Packages" menu item in the editor).
+- Extract the contents of the plugins archive to the "%APPDATA%\Sublime Text 3\Packages" folder (can also be opened via "Preferences → Browse Packages" menu item in the editor). After this the Packages folder should contain plugin folders such as "HLASM", etc.
 - Configure the settings files of plugins (Endevor/endevor.json and ZFTP/zftp.json) - specify your user ID and optionally your password (if not specified then the plugins will prompt for it every editor's session).
 - Use the command palette (Ctrl+Shift+P) to access plugin commands (every command starts with its respective plugin's name).
 
