@@ -1,0 +1,10 @@
+[
+    {"caption": "z/FTP: Download data set",                    "command": "zftp_download_dataset"},
+    {"caption": "z/FTP: Upload data set",                      "command": "zftp_upload_dataset"},
+    {"caption": "z/FTP: Submit job",                           "command": "zftp_submit_job"},
+    {"caption": "z/FTP: Submit job and print spool",           "command": "zftp_submit_job_and_print_spool"},
+    {"caption": "z/FTP: Submit templated job",                 "command": "zftp_submit_templated_job"},
+    {"caption": "z/FTP: Submit templated job and print spool", "command": "zftp_submit_templated_job_and_print_spool"},
+    {"caption": "z/FTP: Print job spool",                      "command": "zftp_print_job_spool"},
+    {"caption": "z/FTP: Restore job JCL",                      "command": "zftp_restore_job_jcl"}
+]
