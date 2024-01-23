@@ -1,0 +1,12 @@
+[
+    {"caption": "Endevor: Reload configuration",  "command": "endevor_reload_configuration"},
+    {"caption": "Endevor: Check connection",      "command": "endevor_check_connection"},
+    {"caption": "Endevor: Execute SCL",           "command": "endevor_execute_scl"},
+    {"caption": "Endevor: Retrieve element",      "command": "endevor_retrieve"},
+    {"caption": "Endevor: Update element",        "command": "endevor_update"},
+    {"caption": "Endevor: Print element listing", "command": "endevor_print_listing"},
+    {"caption": "Endevor: Validate sandbox",      "command": "endevor_validate_sandbox"},
+    {"caption": "Endevor: Smart generate",        "command": "endevor_smart_generate"},
+    {"caption": "Endevor: Compare elements",      "command": "endevor_compare_elements"},
+    {"caption": "Endevor: Find load modules",     "command": "endevor_find_load_modules"}
+]

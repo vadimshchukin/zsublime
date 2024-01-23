@@ -1,0 +1,12 @@
+//{job_name} JOB  {job_card}
+/*JOBPARM  SYSAFF=*
+//*--------------------------------------------------------------------*
+//* RUN SANDVAL.                                                       *
+//*--------------------------------------------------------------------*
+//SANDVAL  EXEC PGM=IKJEFT01,DYNAMNBR=100
+//STEPLIB  DD   DISP=SHR,DSN={load_library}
+//SYSPROC  DD   DISP=SHR,DSN={script_library}
+//SYSPRINT DD   SYSOUT=*
+//SYSTSPRT DD   SYSOUT=*
+//SYSTSIN  DD   *
+%SANDVAL ENV({environment}) SYS({system}) SUB({subsystem}) DEBUG(N)

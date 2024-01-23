@@ -1,0 +1,20 @@
+//{job_name} JOB  {job_card}
+/*JOBPARM  SYSAFF=*
+//*--------------------------------------------------------------------*
+//* RUN SMARTGEN.                                                      *
+//*--------------------------------------------------------------------*
+//SMARTGEN EXEC PGM=IKJEFT01,DYNAMNBR=100
+//STEPLIB  DD   DISP=SHR,DSN={load_library}
+//SYSPROC  DD   DISP=SHR,DSN={script_library}
+//SYSPRINT DD   SYSOUT=*
+//SYSTSPRT DD   SYSOUT=*
+//SYSTSIN  DD   *
+%SMARTGEB {system} {subsystem}
+//OPTIONS  DD   *
+ENV={environment}
+//COMMENT  DD   *
+''
+//SKIPTYPE DD   *
+//GENRPT   DD   SYSOUT=*
+//EN$CAP03 DD   SYSOUT=*
+//ACMQ$OLD DD   DUMMY

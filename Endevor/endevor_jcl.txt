@@ -1,0 +1,28 @@
+//{job_name} JOB {job_card}
+/*JOBPARM    SYSAFF=*
+//*-------------------------------------------------------------------*
+//* ENDEVOR BATCH INTERFACE.                                          *
+//*-------------------------------------------------------------------*
+//NDVRC1   EXEC PGM=NDVRC1,PARM='C1BM3000'
+//STEPLIB  DD   DISP=SHR,DSN={load_library}
+//BATCHEXT DD   *
+PRDADSN={load_library}
+//SYSPRINT DD   SYSOUT=*
+//SORTWK01 DD   UNIT=SYSDA,SPACE=(CYL,(1,2))
+//SORTWK02 DD   UNIT=SYSDA,SPACE=(CYL,(1,2))
+//SORTWK03 DD   UNIT=SYSDA,SPACE=(CYL,(1,2))
+//C1TPDD01 DD   UNIT=SYSDA,SPACE=(CYL,5),DCB=(RECFM=VB,LRECL=260)
+//C1TPDD02 DD   UNIT=SYSDA,SPACE=(CYL,5),DCB=(RECFM=VB,LRECL=260)
+//C1TPLSIN DD   UNIT=SYSDA,SPACE=(CYL,5),DCB=(RECFM=FB,LRECL=80)
+//C1TPLSOU DD   UNIT=SYSDA,SPACE=(CYL,5)
+//C1PLMSGS DD   SYSOUT=*
+//SYSUDUMP DD   SYSOUT=*
+//SYSOUT   DD   SYSOUT=*
+//C1MSGS1  DD   SYSOUT=*
+//C1MSGS2  DD   SYSOUT=*
+//C1PRINT  DD   SYSOUT=*,DCB=(RECFM=FBA,LRECL=133)
+//CAOESTOP DD   DUMMY
+//ACMQ$OLD DD   DUMMY
+//SYMDUMP  DD   DUMMY
+//BSTIPT01 DD   *
+{scl}

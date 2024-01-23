@@ -1,0 +1,10 @@
+{
+    "username": "",
+    "password": "", 
+    "http": {
+        "data_source": "", 
+        "urls": [
+            "",
+        ]
+    }
+}
