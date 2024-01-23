@@ -1,4 +1,0 @@
-[
-    { "caption": "ISPF: Shift right", "command": "ispf_shift_right" },
-    { "caption": "ISPF: Shift left", "command": "ispf_shift_left" }
-]
