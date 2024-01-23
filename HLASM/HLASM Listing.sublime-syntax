@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+name: HLASM Listing
+file_extensions: [LISTLIB]
+scope: source.hlasm.listing
+
+contexts:
+  main:
+    - match: ^.{44} *\d+[^\d]((\*.{,71})|(\.\*.{,70}))
+      captures:
+        1: comment
+    - match: ^.([0-9A-F]{8}).{35} *\d+[^\d]([a-zA-Z@&#]?\S*)
+      captures:
+        1: entity.name.type
+        2: entity.name.function
+    - match: ^.{44} *\d+[^\d]([a-zA-Z@&#]\S*)
+      captures:
+        1: entity.name.function

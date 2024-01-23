@@ -1,15 +1,36 @@
 %YAML 1.2
 ---
 name: HLASM
-file_extensions: [hlasm, ASMPGM]
-scope: source.hlasm
+file_extensions: [hlasm, ASMPGM, ASMMAC]
+scope: source.asm
 
 contexts:
   main:
-    - match: \d{8}$
-      scope: constant.numeric
+    - match: (?<=.{72})\d{8}$
+      scope: string.regexp
+    - match: ^(?=.{71}\S)((\*.{,71})|(\.\*.{,70}))
+      scope: comment
+      push: skip_comment
     - match: ^(\*.{,71})|(\.\*.{,70})
       scope: comment
-    - match: ^(\S+)
+    - match: ^(?=.{71}\S)(\S*) +(\S*).*
       captures:
         1: entity.name.function
+        2: keyword.control
+      push: skip
+    - match: ^(\S*) +(\S*).*
+      captures:
+        1: entity.name.function
+        2: keyword.control
+  skip:
+    - match: ^.{71}\S
+      set: skip
+    - match: .+
+      pop: true
+  skip_comment:
+    - match: ^.{71}\S
+      scope: comment
+      set: skip_comment
+    - match: .+
+      scope: comment
+      pop: true

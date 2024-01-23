@@ -1,0 +1,8 @@
+[
+    { "caption": "HLASM: Print subroutines", "command": "hlasm_print_subroutines" },
+    { "caption": "HLASM: Find line in listing", "command": "hlasm_find_line_in_listing" },
+    { "caption": "HLASM: Set tag", "command": "hlasm_set_tag" },
+    { "caption": "HLASM: Tag lines", "command": "hlasm_tag_lines" },
+    { "caption": "HLASM Listing: Find line in source", "command": "hlasm_listing_find_line_in_source" },
+    { "caption": "HLASM Listing: Find macro origin", "command": "hlasm_listing_find_macro_origin" },
+]
