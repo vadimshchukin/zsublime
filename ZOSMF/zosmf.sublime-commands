@@ -1,0 +1,8 @@
+[
+    {"caption": "z/OSMF: Download data set",                    "command": "zosmf_download_dataset"},
+    {"caption": "z/OSMF: Upload data set",                      "command": "zosmf_upload_dataset"},
+    {"caption": "z/OSMF: Submit job",                           "command": "zosmf_submit_job"},
+    {"caption": "z/OSMF: Submit templated job",                 "command": "zosmf_submit_templated_job"},
+    {"caption": "z/OSMF: Preview templated job",                "command": "zosmf_preview_templated_job"},
+    {"caption": "z/OSMF: Print job spool",                      "command": "zosmf_print_job_spool"}
+]
